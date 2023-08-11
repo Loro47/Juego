@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="stilo.css" />
+    <title>Juego</title>
+  </head>
+  <body>
+    <div id="all" class="borders">
+      <div class="barra">
+        <img src="window_02.png" alt="" />
+        <img src="window.png" alt="" />
+      </div>
+      <header class="borders">
+        <h1 id="cambiar">Adivina el Numero</h1>
+        <p>(Entre 1 y 20)</p>
+      </header>
+
+      <main>
+        <section class="main-section borders">
+          <div class="number">?</div>
+          <input type="number" class="guess" min="0" max="20"/>
+        </section>
+
+        <section class="right">
+          <p class="label-score">Puntaje: <span class="score">0</span></p>
+          <p class="label-highscore">
+            Máximo: <span class="highscore">0</span>
+          </p>
+          <div class="barra">
+            <img src="heart.png" id="1">
+            <img src="heart.png" id="2">
+            <img src="heart.png" id="3">
+            <img src="heart.png" id="4">
+            <img src="heart.png" id="5">
+            <img src="heart.png" id="6">
+            <img src="heart.png" id="7">
+            <img src="heart.png" id="8">
+            <img src="heart.png" id="9">
+            <img src="heart.png" id="10">
+            <img src="heart.png" id="11">
+            <img src="heart.png" id="12">
+            <img src="heart.png" id="13">
+            <img src="heart.png" id="14">
+            <img src="heart.png" id="15">
+          </div>
+        </section>
+
+        <div class="guessing_message borders">
+          <p class="message">Adivina...</p>
+        </div>
+
+        <div class="buttons">
+          <button class="btn check">Check!</button>
+          <button class="btn again">De Nuevo!</button>
+        </div>
+      </main>
+      <script src="java.js"></script>
+    </div>
+  </body>
+</html>
