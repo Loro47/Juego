@@ -36,8 +36,9 @@ body {
     font-size: 9px!important;
   }
   #game-over{
-    left: 0%;
-    width: 100%;
+    top:0%;
+    left:0%;
+    width:100%;
   }
 }
 
