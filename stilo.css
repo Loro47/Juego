@@ -35,6 +35,9 @@ body {
   header p{
     font-size: 9px!important;
   }
+  #game-over{
+    top:5.8%;
+  }
 }
 
 /* ----------------------- LAYOUT ----------------------- */
@@ -172,7 +175,6 @@ header p {
 
 #game-over{
   position: absolute;
-  top:5.8%;
   width: 100%;
   height: auto;
   transition: none;
