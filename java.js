@@ -9,7 +9,12 @@ buttonElem.addEventListener('click', () => {
   const guess=document.querySelector(".guess");
   let valorGuess=parseInt(document.querySelector(".guess").value);
   let distanciaGuess= guess.value.length;
-  if(valorGuess>20){
+  if(valorGuess<0){
+    menssage.textContent="⛔️ Ingrese un Numero igual o superior a 0!";
+    alert("⛔️ Ingrese un Numero igual o superior a 0!");
+    document.querySelector(".guess").value="0";
+  } else{
+    if(valorGuess>20){
     menssage.textContent="⛔️ Ingrese un Numero igual o inferior a 20!";
     alert("⛔️ Ingrese un Numero igual o inferior a 20!");
     document.querySelector(".guess").value="20";
@@ -78,6 +83,7 @@ buttonElem.addEventListener('click', () => {
             }
             
         }
+  }
         document.getElementById(`${contador}`).remove();
         if(contador==1){
           if(oldText!="OFF"){
