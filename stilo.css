@@ -173,5 +173,7 @@ header p {
 #game-over{
   position: absolute;
   top:5.8%;
-  left: 28.5%;
+  width: 100%;
+  height: auto;
+  transition: none;
 }
