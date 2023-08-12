@@ -2,7 +2,9 @@ var numeroAleatorio = Math.round(Math.random()*20);
 let contador=15;
 var puntaje=0;
 const gameOver=document.getElementById("game-over");
-gameOver.style.visibility="hidden";
+document.addEventListener('DOMContentLoaded', function(){
+  gameOver.style.visibility="hidden";
+})
 
 const buttonElem = document.querySelector(".btn.check");
 buttonElem.addEventListener('click', () => {
@@ -113,7 +115,6 @@ const buttonNew = document.querySelector(".btn.again");
 buttonNew.addEventListener('click', function(){
   puntaje=0;
   contador=15;
-  document.getElementById("game-over").src="";
   document.getElementById("game-over").style="";
   alert("El juego comienza de nuevo");
   numeroAleatorio = Math.round(Math.random()*20);
@@ -137,6 +138,7 @@ buttonNew.addEventListener('click', function(){
   <img src="heart.png" id="15">`;
   let oldText = buttonElem.innerText;
   if(oldText!="CHECK!"){
+    document.getElementById("game-over").style.visibility="hidden";
     buttonElem.innerText= "CHECK!";
     document.getElementById("cambiar").innerText="JUEGO DE ADIVINAR"
   }
