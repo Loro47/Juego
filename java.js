@@ -91,10 +91,10 @@ buttonElem.addEventListener('click', () => {
               buttonElem.innerText= "OFF";
               document.getElementById("cambiar").innerText="ADIVINA EL NUMERO";
               document.getElementById("game-over").src="game-over2.png";
+              document.getElementById("game-over").style.transition="all 2s ease-in-out";
+              document.getElementById("game-over").style.transform="scale(0)";
+              document.getElementById("game-over").style.opacity="0";
             }
-            document.getElementById("game-over").style.transition="all 2s ease-in-out";
-            document.getElementById("game-over").style.transform="scale(0)";
-            document.getElementById("game-over").style.opacity="0";
             document.querySelector("audio").play();
           }
           contador-=1;
