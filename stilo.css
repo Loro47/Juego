@@ -35,11 +35,6 @@ body {
   header p{
     font-size: 9px!important;
   }
-  #game-over{
-    top:0%;
-    left:0%;
-    width:100%;
-  }
 }
 
 /* ----------------------- LAYOUT ----------------------- */
