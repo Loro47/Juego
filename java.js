@@ -123,6 +123,7 @@ buttonNew.addEventListener('click', function(){
   puntaje=0;
   contador=15;
   document.getElementById("game-over").style="";
+  document.getElementById("game-over").style.visibility="hidden";
   alert("El juego comienza de nuevo");
   numeroAleatorio = Math.round(Math.random()*20);
   document.querySelector(".guess").value="";
@@ -150,4 +151,4 @@ buttonNew.addEventListener('click', function(){
     buttonElem.innerText= "CHECK!";
     document.getElementById("cambiar").innerText="JUEGO DE ADIVINAR"
   }
-})
+});
