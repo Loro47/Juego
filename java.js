@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function(){
   gameOver.style.visibility="hidden";
 })
 
+document.querySelector(".guess").addEventListener('click', function(){
+  if(document.querySelector(".number").textContent!="?"){
+    document.querySelector(".number").textContent="?";
+  }
+})
+
 const buttonElem = document.querySelector(".btn.check");
 buttonElem.addEventListener('click', () => {
   let oldText = buttonElem.innerText;
@@ -52,6 +58,7 @@ buttonElem.addEventListener('click', () => {
           if(valorGuess==numeroAleatorio){
             menssage.textContent="🎉 Es el número!";
             alert("🎉 Es el número!");
+            document.querySelector(".number").textContent=`${numeroAleatorio}`;
             numeroAleatorio=Math.round(Math.random()*20);
             document.querySelector(".guess").value="";
             if(numPuntos==0){
