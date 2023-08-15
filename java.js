@@ -127,6 +127,7 @@ buttonNew.addEventListener('click', function(){
   numeroAleatorio = Math.round(Math.random()*20);
   document.querySelector(".guess").value="";
   document.querySelector(".score").textContent="0";
+  document.querySelector(".message").textContent="Adivina...";
   document.querySelector(".right .barra").textContent="";
   document.querySelector(".right .barra").innerHTML=`<img src="heart.png" id="1">
   <img src="heart.png" id="2">
