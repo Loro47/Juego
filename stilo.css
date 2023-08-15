@@ -101,11 +101,14 @@ header p {
   background: #add2c1;
   color: #1b251c;
   font-size: 5rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 12rem;
 
   padding: 2.5rem;
+  padding-right: 1.7rem;
   margin-right: 5px;
 
   border: 3px solid #1b251c;
